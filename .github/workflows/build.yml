@@ -1,0 +1,8 @@
+name: aws-sdk-cpp
+on: push
+jobs:
+  build_pkg:
+    uses: gardenlinux/package-build/.github/workflows/build_pkg.yml@main
+    with:
+      source: git+https://github.com/aws/aws-sdk-cpp.git
+      debian_source: native
