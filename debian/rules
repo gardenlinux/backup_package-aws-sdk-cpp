@@ -10,4 +10,5 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DBUILD_SHARED_LIBS=OFF \
+		-DLEGACY_BUILD=OFF \
 		-DBUILD_ONLY="kms;acm-pca"
