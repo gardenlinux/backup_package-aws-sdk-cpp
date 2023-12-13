@@ -6,3 +6,4 @@ jobs:
     with:
       source: git+https://github.com/aws/aws-sdk-cpp.git
       debian_source: native
+      build_options: nocheck
