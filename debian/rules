@@ -7,10 +7,7 @@ source:
 	dh $@
 
 override_dh_auto_configure:
-	sh prefetch_crt_dependency.sh
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DBUILD_SHARED_LIBS=OFF \
-		-DCMAKE_INSTALL_LIBDIR=/usr/lib \
-		-DCMAKE_INSTALL_INCLUDEDIR=/usr/include \
 		-DBUILD_ONLY="kms;acm-pca"
